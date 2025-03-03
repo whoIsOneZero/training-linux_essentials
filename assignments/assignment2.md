@@ -1,4 +1,13 @@
-## User Activity and Command History Monitoring
+## Assignment 2: Searching and Filtering
 
-- **Problem:** Malicious users may try to cover their tracks by clearing history or modifying logs.
-- **Your Task:** Write a script that continuously monitors `.bash_history` files for deletions, logs all executed commands to a secure location, and prevents users from executing `history -c`.
+**Problem:**  
+Write a script that:
+
+- Searches `/etc/shadow` and **identifies users who have an empty password field**.
+- Outputs only the usernames of such accounts.
+
+**Tips:**
+
+- `grep`, `awk`, `cut` (Filtering and Parsing)
+- `-z` (Check for empty fields)
+- File reading and processing

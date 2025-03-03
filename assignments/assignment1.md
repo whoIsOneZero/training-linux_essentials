@@ -1,4 +1,13 @@
-## Password Policy Enforcement Script
+## Assignment 1:
 
-- **Problem:** Weak user passwords can be exploited in brute-force attacks.
-- **Your Task:** Create a BASH script that audits `/etc/shadow` to check password expiration policies, identifies users with weak or empty passwords, and forces them to update their passwords using `passwd`
+**Problem:**  
+Write a script that
+
+- Scans the `/etc/passwd` file and extracts a list of all **system users** (UID < 1000) and **normal users** (UID ≥ 1000).
+- Saves each category into separate files (`system_users.txt` and `normal_users.txt`).
+
+**Tips:**
+
+- `cut`, `awk`, `grep`
+- `if` conditions
+- File redirection (`>`, `>>`)
